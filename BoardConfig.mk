@@ -158,7 +158,8 @@ TARGET_KERNEL_EXT_MODULES := \
     qcom/opensource/dsp-kernel \
     qcom/opensource/eva-kernel \
     qcom/opensource/wlan/platform \
-    qcom/opensource/wlan/qcacld-3.0
+    qcom/opensource/wlan/qcacld-3.0 \
+    nxp/opensource/driver
 
 BOOT_KERNEL_MODULES := $(strip $(shell cat $(DEVICE_PATH)/modules.load.recovery))
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load.vendor_dlkm))
